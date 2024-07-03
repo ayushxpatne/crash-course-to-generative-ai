@@ -75,4 +75,49 @@ To teach Word2Vec, we show it many pairs of toys (words) that play together in s
 5. **What are some challenges in training Word2Vec models?**
    - **Answer:** Challenges include handling large datasets for training, selecting appropriate hyperparameters, and ensuring the model captures meaningful semantic relationships without overfitting.
 
+### Cosine Similarity and Similarity Score
+
+#### Cosine Similarity
+
+**Formal Language Explanation:**
+Cosine similarity is a metric used to measure how similar two vectors are in a multi-dimensional space. It calculates the cosine of the angle between two vectors, indicating their directional similarity regardless of their magnitude.
+
+**5-Year-Old Explanation:**
+Cosine similarity is like checking if two arrows (or toy cars) point in the same direction. If they do, they are more similar.
+
+- **Calculation Formula**
+
+  **Formal Language Explanation:**
+  \[
+  \text{Cosine Similarity}(\mathbf{A}, \mathbf{B}) = \frac{\mathbf{A} \cdot \mathbf{B}}{\|\mathbf{A}\| \|\mathbf{B}\|}
+  \]
+  where \(\mathbf{A} \cdot \mathbf{B}\) is the dot product of vectors \(\mathbf{A}\) and \(\mathbf{B}\), and \(\|\mathbf{A}\|\) and \(\|\mathbf{B}\|\) are their respective magnitudes.
+
+  **5-Year-Old Explanation:**
+  To find out how similar two toys (vectors) are, we multiply them and divide by how big they are. If the answer is close to 1, they are very similar.
+
+#### Similarity Score
+
+**Formal Language Explanation:**
+Similarity score refers to a numerical value that quantifies how similar two objects or entities are based on a chosen metric or algorithm. In NLP and information retrieval, it often refers to the cosine similarity score between word or document embeddings.
+
+**5-Year-Old Explanation:**
+Similarity score is like giving points to toys based on how much they look like each other. More points mean they look very much alike.
+
+- **Applications**
+
+  - **In Natural Language Processing (NLP)**
+    - **Formal Language Explanation:** Similarity scores are used to compare the meanings of words or documents based on their embeddings, helping tasks like finding similar documents or understanding relationships between words.
+    - **5-Year-Old Explanation:** Similarity scores help computers find stories (documents) that are very similar in meaning or find words that mean almost the same thing.
+
+  - **In Recommender Systems**
+    - **Formal Language Explanation:** Similarity scores can recommend toys (products) to people based on how much they liked similar toys in the past.
+    - **5-Year-Old Explanation:** Similarity scores help suggest new toys to play with based on toys you already like.
+
+#### Interview Question and Answer
+
+**Question:** How does cosine similarity help in measuring similarity between words or documents?
+
+**Answer:** Cosine similarity measures the angle between two vectors representing words or documents in a high-dimensional space. If the angle is small (cosine value close to 1), the words or documents are similar in meaning. This metric is crucial in tasks like document retrieval, recommendation systems, and clustering in NLP.
+
 This chapter provides a comprehensive overview of Word2Vec, from its theoretical underpinnings to practical aspects of dataset preparation and model training. If you have more questions or need further explanation on any topic, feel free to ask!
